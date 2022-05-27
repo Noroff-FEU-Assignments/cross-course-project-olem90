@@ -116,17 +116,7 @@ body{
     font-family: 'roboto';
     justify-content: left;
 }
-.bg-img{
-    background-image: url(../images/Mini-deadpool.jpeg);
-    object-fit: cover;
-    height: 815px;
-    max-width: 1200px;
-    background-repeat: no-repeat;
-    opacity: .6;
-    z-index: -1;
-    position: relative;
 
-}
 .about-page-wrapper{
     max-width: 100%;
 }

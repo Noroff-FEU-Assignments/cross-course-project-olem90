@@ -117,7 +117,7 @@ body{
     justify-content: left;
 }
 .bg-img{
-    background-image: url(../images/Mini-deadpool.jpeg);
+    background-image: url("../images/Mini-deadpool.jpeg");
     object-fit: cover;
     height: 815px;
     max-width: 1200px;
@@ -125,7 +125,7 @@ body{
     opacity: .6;
     z-index: -1;
     position: relative;
-
+    background-repeat: no-repeat;
 }
 .about-page-wrapper{
     max-width: 100%;
@@ -141,6 +141,7 @@ body{
     position: absolute;
     z-index: 1;
     margin-right: 200px;
+    opacity: 0.8;
 }
 .about-card{
     max-width: 500px;

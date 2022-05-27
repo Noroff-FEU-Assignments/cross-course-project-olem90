@@ -197,10 +197,10 @@ img{
     padding-bottom: 16px;
     max-width: 100%;
     color: rgb(231, 240, 231);
-    }
+}
 .free-shipping p{
     display: flex;
-    }
+}
 h1{
     display: flex;
     text-align: left;
@@ -210,7 +210,7 @@ h1{
     max-width: 1000px;
     font-size: 42px;
     font-family: 'glue gun','roboto' , verdana, sans-serif;
-    }
+}
 h2{
     display: flex;
     text-align: left;
@@ -221,16 +221,16 @@ h2{
     font-size: 42px;
     padding: 25px;
     font-family: 'glue gun','roboto' , verdana, sans-serif;
-    }
+}
 .spiderman-container{
     height: 100%;
-    }
+}
 .spiderman-image{
     width: 200px;
     max-height: 230px;
     object-fit: cover;
     border-radius: 10px;
-    }
+}
 .deals-section-2{
     display: flex;
     flex-direction: row;
@@ -240,12 +240,12 @@ h2{
     margin-bottom: 2rem;
     min-height: 220x;
     margin: auto;
-    }
+}
 .deals-images{
     max-width: 120px;
     padding:10px;
     margin:0;
-    }
+}
 .deals-text{
     display: flex;
     font-size: 40px;
@@ -255,17 +255,16 @@ h2{
     margin-left: 15px;
     max-height: 210px;
     align-items:  center;
-    }
+}
 .pre-order-images{
     max-width: 110px;
     padding: .3rem;
     width:90px;
-           
-    }
+}
 .pre-order-paragraph1{
     font-weight: 600;
     font-size: 36px;
-    }
+}
 .pre-order-text{
     flex-direction: column;
     align-self: flex-start;
@@ -293,13 +292,13 @@ h2{
     min-height: 250px;
     max-width: 1000px;
     margin: auto;
-    }
+}
 .price{
     width: 100%;
     color: #fff;
     font-size: 20px;
     margin-top: -1px;
-    }
+}
 .pre-order-container{
     display: flex;
     max-width: 1000px;
@@ -309,7 +308,7 @@ h2{
     align-items: center;
     justify-content: space-evenly;
     margin-top: -2px;
-    }
+}
 .cta-deals{
     background-color: rgb(133, 9, 133);
     padding: 10px 80px;
@@ -323,14 +322,14 @@ h2{
     margin-top: -55px;
     margin-bottom: 60px;
     font-weight: 600;
-    }
+}
 .cta-deals a{
     color: #fff;
     display: inline-flex;
     text-decoration: none;
     text-transform: uppercase;
     text-align: center;
-        }
+}
 .cta{
     background-color: rgb(133, 9, 133);
     padding: 10px 80px;
@@ -343,16 +342,14 @@ h2{
     justify-content: center;
     font-family: 'roboto', verdana, helvetica, sans-serif;
     font-weight: 600;
-    }
+}
 .cta a{
     color: #fff;
     display: inline-flex;
     text-decoration: none;
     text-transform: uppercase;
     text-align: center;
-    }
-
-
+}
 .sell-games-section1 {
     background-color: rgb(4, 51, 80);
     display: flex;
@@ -360,7 +357,7 @@ h2{
     margin: auto;
     max-width: 1000px;
     margin-top: 40px;
-    }
+}
 .sell-games-section2{
     background-color: rgb(4, 51, 80);
     min-height: 200px;
@@ -369,7 +366,7 @@ h2{
     max-width: 1000px;
     margin-inline: auto;
     margin-bottom: 30px;
-    }
+}
 .sell-games-container{
     display: flex;
     max-width: 1000px;
@@ -379,7 +376,7 @@ h2{
     align-items: center;
     justify-content: space-evenly;
     margin-top: -2px;
-    }
+}
 .sell-games-paragraph1{
     font-style: italic;
     font-size: 26px;
@@ -399,16 +396,16 @@ h2{
     color:#fff;
     margin: auto;
     font-family: 'glue gun','roboto' , verdana, sans-serif;
-    }
+}
 .sell-games-container{
     display: flex;
     border-radius: 0 0 10px 10px;
-    }
+}
 .sell-games-images{
     max-width: 110px;
     padding: .3rem;
     width:90px;
-    }
+}
 .pre-order-box{  
     max-height: 150px;
     text-align: center;
@@ -416,7 +413,7 @@ h2{
     padding: 0;
     display: block;
     height: 100%;
-    }
+}
 /*hamburger menu */
 .menu-wrap .toggler{
     position: absolute;
@@ -704,8 +701,6 @@ color:red;
 .add-payment i{
     padding: 5px;
     margin-right: 3px;
-    margin-left: 0;
-
 }
 .add-payment{
     margin-right: 60px;
@@ -715,6 +710,13 @@ color:red;
     border-radius: 2px;
     min-width: 140px;
     background: red;
+}
+form :-ms-input-placeholder{
+    margin-left: 10px;
+}
+.checkout-btn:hover{
+    cursor: pointer;
+    box-shadow: 2px 3px rgb(105, 103, 103);
 }
 .form-pharagraph{
     background: #fff;
@@ -736,8 +738,8 @@ color:red;
 .total p{
     font-weight: bolder;
 }
-
 /*Checkout Page end*/
+
 footer a{
     color: #fff;
     padding:20px;
@@ -780,6 +782,8 @@ footer{
     }
     }
 /*End of game page*/
+
+
     
 /*media queries for game description page*/
 @media(max-width:615px){
@@ -820,7 +824,7 @@ footer{
 
 /*end of description page*/
     
-@media (max-width:600px){
+@media (max-width:615px){
 .navbar-links{
     display: none;
     }
