@@ -4,9 +4,7 @@
     PADDING:0;
 }
 body{
-    background: rgb(2, 1, 1);
     font-family: 'roboto';
-    overflow: auto;
 }
 .menu-wrap .toggler{
     position: absolute;
@@ -30,7 +28,6 @@ body{
     align-items: center;
     justify-content: center;
     background: rgb(19, 18, 18);
-    
 }
 /*hamburger line*/
 .menu-wrap .hamburger-menu > div {
@@ -42,7 +39,6 @@ body{
     justify-content: center;
     background-color: rgb(255, 251, 0);
     transition: all .5s ease;
-
 }
 .menu-wrap .hamburger-menu > div:before,
 .menu-wrap .hamburger-menu > div:after{
@@ -73,7 +69,6 @@ body{
 .menu-wrap .toggler:checked ~ .menu {
     visibility: visible;
 }
-
 .menu-wrap .menu{
     top:0;
     left:0;
@@ -85,7 +80,6 @@ body{
     z-index: 1;
     position: absolute;
 }
-
 .menu-wrap .menu > div{
     background:#fff;
     border-radius: 0 0 5px 0;
@@ -114,34 +108,29 @@ body{
     color:#000;
     font-size: 24px;
     font-family: 'roboto';
-    justify-content: left;
-}
-.bg-img{
-    background-image: url("../images/Mini-deadpool.jpeg");
-    object-fit: cover;
-    height: 815px;
-    max-width: 1200px;
-    background-repeat: no-repeat;
-    opacity: .6;
-    z-index: -1;
-    position: relative;
-    background-repeat: no-repeat;
+    margin-right: auto;
+    margin-left: 24px;
 }
 .about-page-wrapper{
     max-width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-inline: auto;
+}
+.logo{
+    margin-top: 8px;
 }
 .about-wrapper{
     background: #fff;
     max-width: 500px;
     display: flex;
     flex-wrap: wrap;
-    top: 140px;
-    left:500px;
+    align-content: center;
     justify-content: center;
-    position: absolute;
-    z-index: 1;
-    margin-right: 200px;
-    opacity: 0.8;
+    margin-block: 20px;
+    opacity: 0.78;
+    margin-inline: auto;
 }
 .about-card{
     max-width: 500px;
@@ -150,12 +139,20 @@ body{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    margin-inline: auto;
+    
+}
+.about-card p {
+    max-width: 300px;
+    margin-inline: auto;
 }
 .about-p1{
     width: 100%;
     max-width: 400px;
     display: flex;
+    justify-items: center;
     flex-direction: column;
+    text-align: left;
 }
 .about-p2{
     width:100%;
@@ -165,7 +162,6 @@ body{
     flex-wrap: wrap;
     margin-bottom: 60px;
 }
-
 .about-h1{
     margin-inline: auto;
     background: #fff;
@@ -173,37 +169,35 @@ body{
     padding:10px;
     width:100%;
     max-width: 300px;
-    }
+}
 footer{
     margin-bottom: 0;
     display: flex;
-    bottom:0px;
     width:100%;
 }
-@media(max-width:1100px){
+@media(min-width:320px){
+.about-card h2{
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    margin-left: -25px;
+    max-width: fit-content;
+    min-width: fit-content;
+}
+.about-card p{
+        max-width: 320px;
+        font-size: 14px;
+        line-height: 19px;
+}
+.about-p1, .about-p2{
+        max-width: 320px;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        flex-grow: 1;
+}
 .about-wrapper{
-    top: 140px;
-    left:250px;
-}
-}
-@media(max-width:800px){
-.about-wrapper{
-    top: 140px;
-    left:100px;
-    margin-right:50px;
-}
-}
-@media(max-width:550px){
-.about-wrapper{
-    top: 140px;
-    left:0px;
-    margin-inline:50px;
-}
-}
-@media(max-width:440px){
-.about-wrapper{
-    top: 140px;
-    left:0px;
-    margin-inline: 15px;
+    justify-items: center;
 }
 }

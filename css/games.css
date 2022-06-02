@@ -1,13 +1,18 @@
 body{
-    background: #fff;
+    background: rgb(4, 51, 80);
 }
 .games-wrapper{
     justify-content: center;
     margin-top: 30px;
 }
 .column-wrapper{
-    display: grid;
+    display: flex;
+    align-content: center;
     margin-left: 25px;
+}
+.games-cover:hover{
+    background-color: rgb(24, 68, 94);
+    box-shadow: 2px 2px rgb(63, 51, 231);
 }
 .nav2 ul li{
     font-size: 20px;
@@ -20,8 +25,12 @@ body{
     max-width: 100px;
     min-width: 80px;
 }
+.navbar{
+    display: block;
+    margin-bottom: 20px;
+}
 .page-wrapper{
-    margin: 0;
+    display: flex;
     align-items: center;
 }
 .nav2{
@@ -38,13 +47,8 @@ body{
     padding: 1px 3px;
 }
 .nav2 ul li a:hover{
-    padding: 1px 3px;
-    border: 1.5px solid rgba(201, 192, 192, 0.3);
-    border-top: 1.5px solid rgb(191, 196, 191);
-    border-top: 1.5px solid rgba(191, 196, 191, 0.3);
-    background-clip: padding-box;
+    opacity: 0.8;
 }
-
 @media(max-width:840px){
 .column-wrapper{
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -71,3 +75,5 @@ body{
     grid-template-columns: 1fr 1fr;
 }
 }
+
+

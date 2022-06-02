@@ -25,9 +25,8 @@ img{
 }
 .navbar{
     display: flex;
-    justify-content: space-between;
-    right:1rem;
-    margin:auto 0px;
+    justify-content: flex-start;
+    margin-right: auto;
 }
 .menu ul li{
     list-style-type: none;
@@ -49,6 +48,7 @@ img{
     align-items: center;
     align-content: center;
     padding-top: 10px;
+    margin-right: 10px;
 }
 .input-wrapper{
     display: flex;
@@ -57,19 +57,30 @@ img{
     max-width: 200px;
     align-self: flex-end;
     margin-bottom:.3rem;
-    background: #fff;
+    background: rgb(236, 229, 229);;
     padding:.2rem;
     border-radius: 3px;
-    padding-inline: 15px;
+    padding-inline: 1px;
+    margin-block: 20px;
 }
 .input-wrapper input{
     border:none;
     outline: none;
     width:100%;
-    margin-bottom: 1px;
+    margin-bottom: 1px; 
+    background: rgb(236, 229, 229);;
+}
+.fa{
+    color: #000;
+}
+.navbar a{
+    padding-bottom: 6px;
+}
+.navbar{
+    background-color: rgb(145, 14, 14);
 }
 .navbar-links li:hover{
-    font-size: 1.09rem;
+    opacity: 0.8;
 }
 .signup{
     display: flex;
@@ -88,7 +99,7 @@ img{
     padding: 2px;
     min-width: 100px;
     text-transform: uppercase;
-    border-radius: 10px;
+    border-radius: 5px;
     font-size: 14px;
     justify-content: center;
     margin-top: 7px;
@@ -102,7 +113,7 @@ img{
     padding: 2px;
     min-width: 100px;
     text-transform: uppercase;
-    border-radius: 10px;
+    border-radius: 5px;
     justify-content: center;
     font-size: 14px;
     max-height: 19px;
@@ -148,9 +159,6 @@ img{
     padding-top: 1px;
     min-height: 340px;
 }
-.top-sellers-box{
-    display: flex;
-}
 .top-sellers-container{
     max-width: 600px;
     display: flex;
@@ -175,13 +183,14 @@ img{
     max-width: 100%;
     background-color:rgb(4, 51, 80);
     min-height: 280px;
-    align-items: center;
-    justify-content: center;
+    max-width: 500px;
+    margin: auto;
 }
 .deals-container{
     max-width: 600px;
     width:100%;
     align-self: center;
+    justify-self: center;
     display: flex;
     flex-direction: column;
 }
@@ -196,20 +205,6 @@ img{
     width:100%;
     display: flex;
     justify-content: center;
-}
-.free-shipping{
-    background-color: rgb(92, 7, 80);
-    color:#000;
-    height:30px;
-    display: flex;
-    justify-content: center;
-    text-transform: uppercase;
-    padding-bottom: 16px;
-    max-width: 100%;
-    color: rgb(231, 240, 231);
-}
-.free-shipping p{
-    display: flex;
 }
 h1{
     display: flex;
@@ -239,7 +234,7 @@ h2{
     width: fit-content;
 }
 .spiderman-image{
-    width: 200px;
+    width: 120px;
     max-height: 230px;
     object-fit: cover;
     border-radius: 10px;
@@ -254,21 +249,59 @@ h2{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    max-width: 1000px;
+    max-width: 280px;
     margin-bottom: 10px;
     min-height: 220x;
+}
+.deals-cta-container{
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    margin: auto;
+}
+.cta-deals, .sell-games-button{
+    background-color: rgb(133, 9, 133);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    max-width: 180px;
+    border-radius: 8px;
+    margin-top: 35px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    margin-inline: auto;
+}
+.deals-cta-container a{
+    text-decoration: none;
+    color: #fff;
+}
+.deals-cta-container{
+    display: flex;
+    justify-content: center;
+}
+.cta-deals:hover{
+    cursor: pointer;
+}
+.cta:hover{
+    cursor: pointer;
 }
 .deals-images{
     max-width: 150px;
     padding:10px;
-    margin:0;
-    min-width:100px ;
+    margin-top:20px;
+    min-width:100px;
+}
+.deals-container-2 p{
+    color: #fff;
+    margin-top: 10px;
 }
 .deals-text{
     font-size: 36px;
     text-transform: uppercase;
     padding: 5px;
-    color:red;
+    color:rgb(209, 196, 196);
+    text-decoration: none;
     margin-left: 15px;
     display: flex;
     align-content: center;
@@ -277,6 +310,7 @@ h2{
     flex-wrap: wrap;
     flex-grow: grow;
     max-height: 200px;
+    max-width: 210px;
 }
 .deals-text p{
     display: flex;
@@ -288,8 +322,7 @@ h2{
     width:90px;
 }
 .pre-order-paragraph1{
-    font-weight: 600;
-    font-size: 36px;
+    padding-top: 440px;
 }
 .pre-order-text{
     display: flex;
@@ -340,35 +373,6 @@ h2{
     justify-content: space-evenly;
     margin-top: -2px;
 }
-.deals-cta-container{
-    margin: 36px 10px 0 10px ;
-}
-.cta-deals{
-    background-color: rgb(133, 9, 133);
-    padding: 10px 80px;
-    display: flex;
-    max-width: 240px;
-    text-align: center;
-    border-radius: 8px;
-    word-break: none;
-    justify-content: center;
-    margin-top: 15px;
-    font-weight: 600;
-    border: 2px solid firebrick;
-}
-.cta-deals:hover{
-    cursor: pointer;
-}
-.cta-deals a{
-    color: #fff;
-    display: inline-flex;
-    text-decoration: none;
-    text-transform: uppercase;
-    text-align: center;
-}
-.cta:hover{
-    cursor: pointer;
-}
 .cta{
     background-color: rgb(133, 9, 133);
     padding: 10px 80px;
@@ -389,6 +393,10 @@ h2{
     text-transform: uppercase;
     text-align: center;
 }
+.sell-games-button:hover{
+    color: green;
+    cursor: pointer;
+}
 .sell-games-section1 {
     background-color: rgb(4, 51, 80);
     display: flex;
@@ -398,7 +406,11 @@ h2{
     margin-top: 40px;
 }
 .top-sellers-button{
-    margin-top: 10px;
+    box-shadow: 2px 2px #333;
+}
+.top-sellers-box a {
+    text-decoration: none;
+    color: #fff;
 }
 .sell-games-section2{
     background-color: rgb(4, 51, 80);
@@ -408,6 +420,13 @@ h2{
     max-width: 1000px;
     margin-inline: auto;
     margin-bottom: 30px;
+}
+.sell-games-box p{
+    color: #fff;
+    margin-top: -1px;
+}
+.sell-games-box{
+    text-align: center;
 }
 .sell-games-container{
     display: flex;
@@ -421,11 +440,19 @@ h2{
 }
 .sell-games-paragraph1{
     font-style: italic;
-    font-size: 26px;
     text-align: center;
     text-transform: uppercase;
     text-align: center;
-    padding-left: 15px;
+    padding-top: 55px;
+    margin-bottom: 70px;
+    border-top: 2px solid silver;
+}
+.sell-games-button a{
+    text-decoration: none;
+    color: #fff;
+}
+.sell-games-button:hover{
+    color:rgb(5, 172, 5);
 }
 .sell-games-text{
     position: relative;
@@ -445,8 +472,11 @@ h2{
 }
 .sell-games-images{
     max-width: 110px;
-    padding: .3rem;
+    padding: 4px;
     width:90px;
+}
+.sell-games-paragraph2{
+    margin-bottom: 40px;
 }
 .pre-order-container{
     display: flex;
@@ -463,10 +493,6 @@ h2{
     height: 100%;
     display: block;
 }
-.pre-order-box:hover{
-    background-color: rgb(6, 46, 73);
-    cursor: pointer;
-}
 /*hamburger menu */
 .menu-wrap .toggler{
     position: absolute;
@@ -481,7 +507,6 @@ h2{
 .menu-wrap .hamburger-menu{
     position: absolute;
     top:16px;
-    left:0;
     z-index: 1;
     width:40px;
     height: 40px;
@@ -489,7 +514,12 @@ h2{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgb(19, 18, 18);
+    background: rgb(19, 19, 18);
+}
+.menu-wrap{
+    display: flex;
+    justify-items: flex-start;
+    align-items: flex-start;
 }
 /*hamburger line*/
 .menu-wrap .hamburger-menu > div {
@@ -539,11 +569,10 @@ h2{
     height:100%;
     visibility: hidden;
     display: flex;
-    align-items:center;
     min-width: 350px;
 }
 .menu-wrap .menu > div{
-    background:#fff;
+    background:rgb(197, 192, 192);
     border-radius: 0 0 5px 0;
     width:250px;
     top:78px;
@@ -562,7 +591,7 @@ h2{
     line-height: 2;
 }
 .menu li a{
-    color:#000;
+    color: #000;
     line-height: 35px;
     padding:10px;
     text-decoration: none;
@@ -571,11 +600,13 @@ h2{
     display: flex;
 }
 .toggler:checked .menu-wrap .menu + {
-    
     visibility: visible;
 }
 .menu li a:hover{
     opacity: 0.6;
+}
+.menu ul li{
+    border-top: 2px solid grey;
 }
 /*Games Page*/
 .games-wrapper{
@@ -652,17 +683,17 @@ h2{
     display: inline-block;
 }
 .wish-list-button{
-    border: 2px solid #000;
     max-width: 180px;
     font-size: 16px;
     padding:10px;
+    margin-block: 10px;
     background: #fff;
     display: flex;
-    flex-direction: row;
-    margin-bottom: 30px;
 }
-/*game description end*/
-
+.description-text-container{
+    color: #fff;
+    max-width: 160px;
+}
 /*Account Page*/
 .account-h1{
     margin-top:0;
@@ -712,7 +743,7 @@ color:red;
 .checkout-container{
     display: flex;
     flex-direction: column;
-    min-width: 300px;
+    min-width: 240px;
     border: 1px solid #333;
 }
 .checkout-wrapper{
@@ -730,7 +761,6 @@ color:red;
     padding:1px;
 }
 .checkout-container p{
-    justify-content: center;
     display: flex;
     width:200px;
     height: 25px;
@@ -743,30 +773,90 @@ color:red;
 }
 .shipping-box a{
     color:#000;
+    max-width: 20px;
+    margin-left: 90px;
 }
-.shipping-box i{
-    padding-left: 70px;
-    margin-left: 70px;
+.shipping-box{
+    background-color: rgb(192, 192, 192);
+    width: 50px;
+}
+form input{
+    max-width: 380px;
+}
+form{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.subtotal{
+    display: flex;
+    text-align: left;
+    align-items: flex-start;
+    justify-content: left;
+}
+.sub-price-p, .savings-price, .tax-price, .shipping-price, .total-price{
+    display: flex;
+    margin-left: -80px;
+}
+.savings, .tax, .shipping-checkout, .total{
+    display: flex;
 }
 .add-payment i{
     padding: 5px;
     margin-right: 3px;
 }
+.shipping-price{
+    color: rgb(7, 102, 7);
+}
+.p-wrapper{
+    display: flex;
+    flex-direction: row;
+}
+.sub-p{
+    min-width: 120px;
+}
+.sub-price-p{
+    display: flex;
+    flex-direction: row;
+}
+.shipping-container{
+    text-align: left;
+    max-width: 380px;
+}
+.shipping-container i{
+    margin-left: 70px;
+    margin-right: 0;
+    color: red;
+}
 .add-payment{
-    margin-right: 60px;
+    background-color: rgb(192, 192, 192);
+    overflow: hidden;
+}
+.add-payment a{
+    text-align: left;
+}
+.checkout-btn a{
+    display: flex;
+    align-content: center;
 }
 .checkout-btn{
-    margin: 10px 0 30px 0;
+    margin: 20px 20px ;
     border-radius: 2px;
-    min-width: 140px;
-    background: red;
+    min-width: 60px;
+    background-color:  rgb(7, 170, 7);
+    display: flex;
+    flex-direction: column;
+    align-content: center;
 }
 form :-ms-input-placeholder{
     margin-left: 10px;
 }
 .checkout-btn:hover{
     cursor: pointer;
-    box-shadow: 2px 3px rgb(105, 103, 103);
+    box-shadow: 1px 2px rgb(175, 175, 174);
+}
+.phone-form{
+    border-bottom: 2px solid rgb(139, 139, 137);
 }
 .form-pharagraph{
     background: #fff;
@@ -792,6 +882,10 @@ form :-ms-input-placeholder{
 footer a{
     color: #fff;
     padding:20px;
+    text-decoration: none;
+}
+footer a:hover{
+    text-decoration: underline;
 }
 footer{
     display: flex;
@@ -810,7 +904,6 @@ footer{
 }
 .signup{
     display:none;
-
 }
 .navbar-links ul{
     flex-direction: row;
@@ -830,21 +923,18 @@ footer{
 }
 }
 /*media queries for game description page*/
-@media(max-width:615px){
-.add-to-cart-button{
-    max-width: 140px;
-    font-size: 14px;
-}
-.wish-list-button{
-    max-width: 140px;
-    font-size: 14px;
-}
+@media(min-width:615px){
 .game-description-img{
     max-width:250px;
     min-width: 160px;
 }
 .furious-p,.furious-price{
     font-size: 22px;
+    color: #FFF;
+    margin-left: 18px;
+}
+.description-text-container{
+    min-width: 320px;
 }
 }
 @media(max-width:450px){
@@ -852,15 +942,15 @@ footer{
     max-width: 120px;
     font-size: 14px;
 }
-    .wish-list-button{
+.wish-list-button{
     max-width: 120px;
     font-size: 14px;
 }
-    .game-description-img{
+.game-description-img{
     max-width:250px;
     min-width: 130px;
 }
-    .furious-p,.furious-price{
+.furious-p,.furious-price{
     font-size: 19px;
 }
 }
@@ -868,28 +958,263 @@ footer{
 @media (max-width:615px){
 .navbar-links{
     display: none;
-    }
+}
 }
 @media (min-width:320px){
-    .top-sellers-images{
-        max-width:60px;
-    }
-    .spiderman-image{
-        max-width: 160px;
-    }
-    .deals-text{
-        margin-top: 12px;
-    }
-    .deals-text p{
-        font-size: 28px;
-    }
-    .deals-images{
-        max-height: 120px;
-        max-width: 60px;
-        padding: 0;
-    }
-    .deals-container-2{
-        max-width: 86px;
-    }
-    
+.logo{
+    min-width: 86px;
+    margin-left: 50px;
+}
+.signup a{
+    font-size: 12px;
+}
+.signup{
+    margin-right: 10px;
+    margin-top: 6px;
+}
+.top-sellers-images{
+    max-width:60px;
+}
+.spiderman-image{
+    max-width: 160px;
+}
+.deals-text{
+    margin-top: 12px;
+    margin-right:2px;
+    text-decoration: none;
+    color: rgb(71, 7, 7);
+}
+.deals-text a{
+    font-size: 28px;
+    color: rgb(192, 19, 19);
+    text-decoration: none;
+    font-weight: bolder;
+}
+.deals-images{
+    max-height: 96px;
+    max-width: 70px;
+}
+.deals-container-2{
+    display: flex;
+    max-width: 86px;
+}
+.deals-section{
+    max-width: 300px;
+}
+.deals-cta-container{
+    margin-top: -10px;
+    align-content: center;
+}
+.deals-container-2 p{
+    display: flex;
+    justify-content: center;
+}
+.pre-order-paragraph2{
+    font-size: 26px;
+}
+.pre-order-images{
+    max-width: 70px;
+    margin-top: 20px;
+}
+.pre-order-box p, .sell-games-box p, .deals-container-2 p {
+    font-size: 18px;
+    text-align: left;
+    margin-left: 6px;
+}
+.sell-games-section2{
+    max-width: 340px;
+}
+.sell-games-text p, .sell-games-paragraph2 {
+    font-size: 26px;
+}
+h2{
+    font-size: 36px;
+}
+.input-wrapper{
+    max-width: 86%;
+    margin-inline: auto;
+    padding-inline: 10px;
+    margin-top: 10px;
+}
+.menu-wrap .menu > div{
+    max-width: 170px;
+}
+.menu-wrap .hamburger-menu{
+    height: fit-content;
+    margin-left: 4px;
+    top: 30px;
+    width: 32px;
+    margin-top: 6px;
+}
+.logo{
+    max-width: 72px;
+}
+.menu li a{
+    font-size: 16px;
+    padding: 0;
+    margin-left: 10px;
+}
+.menu{
+    margin-top: -7px;
+}
+.menu-wrap .toggler{
+    top: 15px;
+    max-width: 38px;
+    left: 3px;
+    color: white;
+    max-height:29px ;
+}
+.menu-wrap .menu{
+    margin-left: -40px;
+}
+.signup{
+    visibility: visible;
+    display: block;
+}
+.top-sellers-section{
+    margin-top: 0;
+}
+.top-sellers-button{
+    max-width: 180px;
+    padding-inline: 20px;
+}
+.top-sellers-button:hover{
+    color: green;
+}
+.sell-games-images{
+    max-width: 70px;
+}
+.pre-order-button, .cta-deals, .sell-games-button{
+    max-width: 140px;
+    padding-inline: 20px ;
+}
+/*Game Description*/
+.game-description-img{
+    max-height: 180px;
+}
+.description-section{
+    display: flex;
+    flex-direction: column;
+    max-height: fit-content;
+}
+.description-section h2{
+    display: flex;
+    justify-content: center;
+    margin-top: -28px;
+}
+.furious-price{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    margin-right: 16px;
+    color: #fff;
+}
+.description-img-container{
+    display: flex;
+    align-self: center;
+    margin-top: -50px;
+    align-items: center;
+    margin-inline: auto;
+}
+.wish-list-button{
+    max-width: 200px;
+    max-height: 14px;
+    align-self: center;
+    margin-left: 5px;
+    border: none;
+}
+.add-to-cart-button{
+    display: flex;
+    max-width: 200px;
+    max-height: 14px;
+    align-items: center;
+}
+.button-container{
+    display: flex;
+}
+.description-text-container{
+    display: flex;
+    align-self: center;
+    max-width: 240px;
+    margin-inline: 15px;
+    flex-direction: column;
+}
+/*Account Page*/
+.account-container{
+    margin-top: 1px;
+}
+/*Games Page*/
+.column-wrapper img{
+    max-height: 100px;
+    margin: 0;
+}
+.games-wrapper{
+    display: flex;
+    margin-inline: 10px;
+    margin-bottom: 10px;
+}
+.column-wrapper p{
+    display: flex;
+    color: #fff;
+    align-content: center;
+    justify-content: center;
+}
+.column-wrapper{
+    display: flex;
+    justify-content: center;
+    margin-right: 24px;
+}
+.page-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.nav2{
+    max-width: 280px;
+}
+/*Checkout Page*/
+.checkout-container p{
+    max-width: 100px;
+    display: flex;
+}
+form{
+    justify-content: center;
+    align-content: center;
+    margin-inline: auto;
+    max-width: 260px;
+}
+.checkout-btn{
+    max-width: 95px;
+    display: flex;
+    justify-items: center;
+    margin-right: auto;
+    margin-left: 0;
+    border: 2px solid rgb(7, 170, 7);
+    max-height: 10px;
+}
+.shipping-container i{
+    margin-left: 0;
+}
+.checkout-btn a{
+    display: flex;
+    justify-items: center;
+    color: #000;
+}
+footer{
+    max-width: 100%;
+}
+}
+/*Media for checkout*/
+@media(min-width:500px){
+form{
+    min-width: 330px;
+}
+.checkout-btn{
+    margin-left: auto;
+}
+.shipping-container i{
+    margin-right: 0;
+    margin-left: 70px;
+}
 }
