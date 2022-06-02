@@ -178,6 +178,10 @@ button:hover{
     margin-right: 5px;
     padding:3px;
 }    
+footer{
+    position: absolute;
+    margin-top: auto;
+}
 @media(max-width:1800px){
 
     .help-email p {
@@ -198,10 +202,6 @@ button:hover{
     }
     }   
 @media (min-width:320px){
-.contact-footer{
-    position: absolute;
-    bottom:-99vh;
-}
 .input-wrapper{
     min-width: 155px;
     margin-top: 5px;
