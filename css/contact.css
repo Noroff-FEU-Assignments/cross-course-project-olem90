@@ -179,7 +179,6 @@ button:hover{
     padding:3px;
 }    
 footer{
-    position: absolute;
     margin-top: auto;
 }
 @media(max-width:1800px){
