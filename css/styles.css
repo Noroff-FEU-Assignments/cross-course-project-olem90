@@ -293,6 +293,8 @@ h2{
 .deals-container-2 p{
     color: #fff;
     margin-top: 10px;
+}
+.deals-container-2 a{
     text-decoration: none;
 }
 .deals-text{
@@ -424,6 +426,9 @@ h2{
     color: #fff;
     margin-top: -1px;
 }
+.sell-games-box a{
+    text-decoration: none;
+}
 .sell-games-box{
     text-align: center;
 }
@@ -491,6 +496,9 @@ h2{
     padding: 5px 10px;
     height: 100%;
     display: block;
+}
+.pre-order-box a{
+    text-decoration: none;
 }
 /*hamburger menu */
 .menu-wrap .toggler{
