@@ -900,10 +900,8 @@ footer{
     width:100%;
     background: #000;
     justify-content: space-evenly;
-    max-width: 2000px;
     color:#fff;
     margin-top: auto;
-    border: 3px solid gold;
 }
 @media (max-width:745px){
 .navbar{

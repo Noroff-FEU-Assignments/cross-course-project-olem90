@@ -5,11 +5,12 @@
     box-sizing: border-box;
     font-family: 'roboto', verdana, helvetica, sans-serif;
 }
-body{
-    margin-bottom: 30px;
-}
 .navbar{
     margin-bottom: 20px;
+}
+body{
+    position: relative;
+    height: 100%;
 }
 /*contact us page*/
 
@@ -32,6 +33,8 @@ body{
     max-height: fit-content;
 }
 .form-container{
+    display: flex;
+    flex-direction: column;
     max-width: 500px;
     text-align: left;
     padding:20px;
@@ -39,6 +42,8 @@ body{
     border-radius: 4px;
     color: #000;
     font-weight: 700;
+    border: 2px solid gold;
+    margin-bottom: 90px;
 }
 .contact-h2{
     background-color: rgb(199, 209, 240);
@@ -179,7 +184,9 @@ button:hover{
     padding:3px;
 }    
 footer{
-    margin-top: auto;
+    position: absolute;
+    bottom: 0;
+    margin-top: 20px;
 }
 @media(max-width:1800px){
 
