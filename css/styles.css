@@ -670,10 +670,6 @@ h2{
     background: rgb(4, 51, 80);
     height: 100%;
 }
-footer{
-    position: absolute;
-    bottom: 0;
-}
 .item-price{
     margin-bottom: auto;
     margin-top: 6px;
@@ -945,6 +941,8 @@ footer{
     justify-content: space-evenly;
     color:#fff;
     margin-top: auto;
+    position: absolute;
+    bottom: 0;
 }
 @media (max-width:745px){
 .navbar{
