@@ -43,7 +43,7 @@ img{
     text-decoration: none;
     color: #fff;
     display: flex;
-    margin-left: 33px;
+    margin-inline: 15px;
     align-items: center;
     align-content: center;
     padding-top: 10px;
@@ -88,21 +88,7 @@ img{
     max-height: 55px;
     position: absolute; 
     right:12px;
-    top:0;
-}
-.signup-btn{
-    display: flex;
-    color: #000;
-    text-decoration: none;
-    background-color: #fff;
-    padding: 2px;
-    min-width: 100px;
-    text-transform: uppercase;
-    border-radius: 3px;
-    font-size: 14px;
-    justify-content: center;
-    margin-top: 7px;
-    max-height: 19px;
+    top:32px;
 }
 .toggle-btn{
     position:absolute;
@@ -1012,12 +998,12 @@ footer{
 }
 }
 /*Media Queries homepage*/
-@media (max-width:615px){
+@media (max-width:610px){
 .navbar-links{
     display: none;
 }
 }
-@media (min-width:615px){
+@media (min-width:610px){
 .menu-wrap{
     visibility: hidden;
     display: none;
@@ -1034,9 +1020,16 @@ footer{
 .signup a{
     font-size: 12px;
 }
-.signup{
+.signup {
     margin-right: 10px;
     margin-top: 6px;
+    text-decoration: underline;
+    color: #fff;
+    font-weight: 900;
+}
+.signup a{
+    color: #fff;
+    font-size: 15px;
 }
 .top-sellers-images{
     max-width:60px;

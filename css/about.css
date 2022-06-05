@@ -160,7 +160,11 @@ body{
     flex-wrap: wrap;
     margin-bottom: 60px;
 }
-
+.signup a{
+    text-decoration: underline;
+    color: #fff;
+    font-weight: 900;
+}
 .about-h1{
     margin-inline: auto;
     background: rgb(221, 248, 253);
