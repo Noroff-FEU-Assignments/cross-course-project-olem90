@@ -754,7 +754,10 @@ h2{
     padding-block: 15px;
 }
 .account-body{
-    height: 100vh;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 .account-container{
     justify-content: center;
@@ -765,6 +768,11 @@ h2{
     line-height: 35px;
     margin-block: 50px;
     margin-bottom: 90px;
+}
+.account-footer{
+    margin-top: auto;
+    position: absolute;
+    bottom: 0;
 }
 .account-wrapper{
     display: flex;
