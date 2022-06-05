@@ -10,7 +10,6 @@ body{
     position: absolute;
     top:30px;
     left: 5px;
-    z-index: 2;
     cursor: pointer;
     width:40px;
     height: 40px;
@@ -18,7 +17,7 @@ body{
 }
 .menu-wrap .hamburger-menu{
     position: absolute;
-    top:20px;
+    top:10px;
     left:0;
     z-index: 1;
     width:40px;
@@ -70,32 +69,30 @@ body{
     visibility: visible;
 }
 .menu-wrap .menu{
+    position: absolute;
     top:0;
     left:0;
     width:100%;
-    height:100%;
+    max-height:100%;
     display: flex;
     align-items:center;
-    max-width: 350px;
-    z-index: 1;
-    position: absolute;
 }
 .menu-wrap .menu > div{
     background:#fff;
     border-radius: 0 0 5px 0;
-    width:250px;
-    top:70px;
-    position: absolute;
+    max-width:fit-content;
+    margin-bottom: auto;
+    margin-top: 63px;
     transition: .2s ease-in;
-    
+    border-right: 2px solid silver;
 }
 .menu li a{
     color:#000;
-    line-height: 35px;
-    padding:10px;
+    line-height: 20px;
+    padding:10px 18px;
     text-decoration: none;
-    font-size: 22px;
-    margin-left: 15px;
+    font-size: 18px;
+    margin-left: 35px;
 }
 .toggler:checked .menu-wrap .menu + {
     visibility: visible;
@@ -104,7 +101,7 @@ body{
     opacity: 0.6;
 }
 .about-h2{
-    background: #fff;
+    background: rgb(221, 248, 253);
     color:#000;
     font-size: 24px;
     font-family: 'roboto';
@@ -118,9 +115,6 @@ body{
     flex-direction: column;
     margin-inline: auto;
 }
-.logo{
-    margin-top: 8px;
-}
 .about-wrapper{
     background: #fff;
     max-width: 500px;
@@ -129,7 +123,7 @@ body{
     align-content: center;
     justify-content: center;
     margin-block: 20px;
-    opacity: 0.78;
+    background-color: rgb(221, 248, 253);
     margin-inline: auto;
 }
 .about-card{
@@ -140,8 +134,12 @@ body{
     flex-direction: column;
     flex-wrap: wrap;
     margin-inline: auto;
-    
 }
+.menu{
+    margin-bottom: auto;
+    margin-top: 5px;
+}
+
 .about-card p {
     max-width: 300px;
     margin-inline: auto;
@@ -162,9 +160,10 @@ body{
     flex-wrap: wrap;
     margin-bottom: 60px;
 }
+
 .about-h1{
     margin-inline: auto;
-    background: #fff;
+    background: rgb(221, 248, 253);
     color:#000;
     padding:10px;
     width:100%;
