@@ -807,6 +807,8 @@ color:red;
 .checkout-footer{
     position: absolute;
     bottom: 0;
+    margin-top: auto;
+    margin-bottom: 0;
 }
 .checkout-h1{
     margin-top:0;
