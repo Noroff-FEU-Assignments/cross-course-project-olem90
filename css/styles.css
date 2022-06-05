@@ -6,6 +6,7 @@ body{
     padding: 0;
     background: rgb(4, 51, 80);
     font-family: 'roboto';
+    height: 100%;
 }
 header{
     width:100%;
