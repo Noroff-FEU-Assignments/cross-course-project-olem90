@@ -26,6 +26,7 @@ img{
 .navbar{
     display: flex;
     justify-content: center;
+    margin-bottom: 20px;
 }
 .menu ul li{
     list-style-type: none;
@@ -52,7 +53,7 @@ img{
 .input-wrapper{
     display: flex;
     align-items: center;
-    width: 80%;
+    width: 86%;
     max-width: 200px;
     align-self: flex-end;
     margin-bottom:.3rem;
@@ -666,7 +667,12 @@ h2{
 }
 /*Cart Page*/
 .body-cart{
-    background-color:#f0f2f5;
+    background: rgb(4, 51, 80);
+    height: 100%;
+}
+.cart-footer{
+    position: absolute;
+    bottom: 0;
 }
 .item-price{
     margin-bottom: auto;
@@ -1090,7 +1096,7 @@ h2{
     font-size: 36px;
 }
 .input-wrapper{
-    max-width: 400px;
+    max-width: 500px;
     margin-inline: auto;
     padding-inline: 10px;
     margin-top: 10px;
