@@ -800,6 +800,14 @@ color:red;
     margin-left: 40px;
 }
 /*Checkout Page*/
+.checkout-body{
+    position: relative;
+    min-height: 100vh;
+}
+.checkout-footer{
+    position: absolute;
+    bottom: 0;
+}
 .checkout-h1{
     margin-top:0;
     max-width:100%;
