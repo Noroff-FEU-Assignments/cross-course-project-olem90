@@ -1,6 +1,5 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
 body{
     margin: 0;
     padding: 0;
@@ -669,7 +668,14 @@ h2{
 /*Cart Page*/
 .body-cart{
     position: relative;
-    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+#cart-footer{
+    margin-top: auto;
+    position: absolute;
+    bottom: 0;
 }
 .item-price{
     margin-bottom: auto;
@@ -954,11 +960,7 @@ footer{
     position: absolute;
     bottom: 0;
 }
-.cart-footer{
-    margin-top: 500px;
-    position: absolute;
-    bottom: 0;
-}
+
 #index-footer{
     position: absolute;
     bottom:0;
