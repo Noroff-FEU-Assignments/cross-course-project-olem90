@@ -6,6 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopping Cart</title>
     <link rel="stylesheet" href="css/styles.css">
+    <!-- Hotjar Tracking Code for my site -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:2974390,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
 </head>
 <body class="body-cart">
     <header>
@@ -30,26 +41,28 @@
             <a href="index.html"><img class="logo" src="images/Gamehub-logo.png" alt="gamehub logo"></a>
         </div>
         </div>
-        <nav class="navbar">
-        <div class="navbar-links">
-            <ul>
-                <li><a href="account.html">Account</a>
-                </li>
-                <li><a href="games.html">Games</a>
-                </li>
-                <li><a href="#">Cart</a>
-                </li>
-                <li><a href="account.html">Sell Games</a>
-                </li>
-                <li><a href="checkout.html">Checkout</a>
-                </li>
-            </ul>
-        </div>
-        </nav>
         <div class="signup">
             <a class="signup-btn" href="#">Sign In</a>
         </div>
         </header>
+        <nav class="navbar">
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="index.html">Home</a>
+                    </li>
+                    <li><a href="games.html">Games</a>
+                    </li>
+                    <li><a href="account.html">Account</a>
+                    </li>
+                    <li><a href="account.html">Sell Games</a>
+                    </li>
+                    <li><a href="cart.html">Cart</a>
+                    </li>
+                    <li><a href="checkout.html">Checkout</a>
+                    </li>
+                </ul>
+            </div>
+            </nav>
         <div class="input-wrapper">
             <input type="text" placeholder="Search Games">
             <a href="">
@@ -57,8 +70,8 @@
             </div>
             </a>
         </div>
-        <h1>Cart</h1>
-        
+        <h1 class="cart-h1">Cart</h1>
+        <div class="items-container">
         <div class="items-card">
         <div class="item">
         <div class="cart-image">
@@ -81,6 +94,7 @@
         </div>
         </div>
         </div>
-<script src="js/script.js"></script>
+        </div>
+<script src="js/products.js" type="module"></script>
 </body>
 </html>

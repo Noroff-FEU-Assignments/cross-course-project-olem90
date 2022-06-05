@@ -22,14 +22,14 @@ function validateForm(event){
     else{
         emailError.style.display = "block";
     }
-    if(checkLength(contactMessage.value, 25) === true){
+    if(checkLength(contactMessage.value, 14) === true){
         contactMessageError.style.display = "none";
     }
     else{
         contactMessageError.style.display = "block";
     }
     
-    if(checkLength(name.value, 0) === true && validateEmail(email.value) === true && checkLength(contactMessage.value, 25) === true){
+    if(checkLength(name.value, 0) === true && validateEmail(email.value) === true && checkLength(contactMessage.value, 14) === true){
         validation.style.display = "block";
     } 
     else{
