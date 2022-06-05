@@ -753,6 +753,9 @@ h2{
     max-width:100%;
     padding-block: 15px;
 }
+.account-body{
+    height: 100vh;
+}
 .account-container{
     justify-content: center;
     justify-content: left;
