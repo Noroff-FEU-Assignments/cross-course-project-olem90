@@ -12,6 +12,9 @@ body{
     align-content: center;
     margin-left: 25px;
 }
+.games-cover p{
+    text-decoration: none;
+}
 .games-cover:hover{
     background-color: rgb(24, 68, 94);
     box-shadow: 2px 2px rgb(63, 51, 231);
