@@ -668,7 +668,7 @@ h2{
 }
 /*Cart Page*/
 .body-cart{
-    background: rgb(4, 51, 80);
+    position: relative;
     height: 100%;
 }
 .item-price{
@@ -755,6 +755,7 @@ h2{
     background: rgb(22, 18, 18);
     line-height: 35px;
     margin-block: 50px;
+    margin-bottom: 90px;
 }
 .account-wrapper{
     display: flex;
@@ -934,16 +935,28 @@ footer a{
 footer a:hover{
     text-decoration: underline;
 }
+body{
+    position: relative;
+    height: 100%;
+}
 footer{
     display: flex;
-    justify-content: end;
     width:100%;
     background: #000;
     justify-content: space-evenly;
     color:#fff;
-    margin-top: auto;
     position: absolute;
     bottom: 0;
+}
+.cart-footer{
+    
+    position: absolute;
+    bottom: 0;
+}
+#index-footer{
+    position: absolute;
+    bottom:0;
+    margin-top: auto;
 }
 @media (max-width:745px){
 .navbar{
