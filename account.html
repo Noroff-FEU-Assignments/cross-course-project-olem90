@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta description= "Your account page, page with your information and to keep track of your account">
     <title>Account Page</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Hotjar Tracking Code for my site -->
 <script>
     (function(h,o,t,j,a,r){
@@ -19,13 +20,13 @@
     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
 </script>
 </head>
-<body>
-   
-    <header>
-        <div class="menu-wrap">
+<body class="account-body">
+<header>
+    <div class="menu-wrap">
         <input type="checkbox" class="toggler">
-        <div class="hamburger-menu"><div></div></div>
+    <div class="hamburger-menu"><div></div></div>
     <div class="menu">
+<<<<<<< HEAD
         <div>
             <div>
                 <ul>
@@ -39,46 +40,76 @@
                 </ul>
             </div>
         </div>
+=======
+    <div>
+    <div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="games.html">Games</a></li>
+            <li><a href="account.html">Account</a></li>
+            <li><a href="account.html">Sell Games</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="checkout.html">Checkout</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+>>>>>>> 67c94a0c43442e1c1c91455050f361fa6bdcfc0a
     </div>
-        </div>
-            <div>
-                <a href="index.html"><img class="logo" src="images/Gamehub-logo.png" alt="gamehub logo"></a>
+    </div>
+    </div>
+    </div>
+    <div>
+        <a href="index.html"><img class="logo" src="images/Gamehub-logo.png" alt="gamehub logo"></a>
+    </div>
+    <div class="signup">
+        <a class="signup-btn" href="#">Sign In</a>
+    </div>
+</header>
+<nav class="navbar">
+    <div class="navbar-links">
+        <ul>
+            <li><a href="index.html">Home</a>
+            </li>
+            <li><a href="games.html">Games</a>
+            </li>
+            <li><a href="account.html">Account</a>
+            </li>
+            <li><a href="account.html">Sell Games</a>
+            </li>
+            <li><a href="cart.html">Cart</a>
+            </li>
+            <li><a href="checkout.html">Checkout</a>
+            </li>
+            <li><a href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+    <div class="input-wrapper">
+        <input type="text" placeholder="Search Games">
+        <a href="">
+            <div class="fa fa-search">
             </div>
-        <div class="input-wrapper">
-            <input type="text" placeholder="Search Games">
-                <div class="fa fa-search"></div>
-        </div>
-            <nav class="navbar">
-                <div class="navbar-links">
-                    <ul>
-                        <li><a href="#">Sell Games</a></li>
-                        <li><a href="account.html">Account</a></li>
-                        <li><a href="#">Cart</a></li>
-                    </ul>
-                </div>
-             </nav>
-            <div class="signup">
-                <a class="signup-btn" href="#">Sign Up</a>
-                <a class="login-btn" href="#">Log In</a>
-            </div>
-        </header>
+        </a>
+    </div>
         <h1 class="account-h1">My Account</h1>
-        <div class="account-wrapper">
-        <div class="account-container">
-        <div class="account-list"><p>My Account</p></div>
-            <ul>
-                <li><a href="#">Account Information</a></li>
-                <li><a href="#">Shipping Address</a></li>
-                <li><a href="#">My Wishlist</a></li>
-                <li><a href="#">Sell Games</a></li>
-                <li><a href="#">My Orders</a></li>
-                <li><a href="#">Credit</a></li>
-            </ul>
-        </div>
-        </div>
-        <footer>
-            <a href="contact.html">Contact Us</a>
-            <a href="about.html">About Us</a>
-        </footer>
+    <div class="account-wrapper">
+    <div class="account-container">
+    <div class="account-list">
+        <p>My Account</p>
+    </div>
+        <ul>
+            <li><a href="#">Account Information</a></li>
+            <li><a href="#">Shipping Address</a></li>
+            <li><a href="#">My Wishlist</a></li>
+            <li><a href="#">Sell Games</a></li>
+            <li><a href="#">My Orders</a></li>
+            <li><a href="#">Credit</a></li>
+        </ul>
+    </div>
+    </div>
+<footer class="account-footer">
+        <a href="contact.html">Contact Us</a>
+        <a href="about.html">About Us</a>
+</footer>
 </body>
 </html>
