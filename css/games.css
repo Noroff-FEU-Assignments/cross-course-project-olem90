@@ -28,9 +28,8 @@ body{
     justify-content: center;
     display: flex;
     background: rgb(4, 51, 80);
-}
-.nav2 ul li a{
-    color:#fff;
+    width: 100%;
+    margin-bottom: 30px;
 }
 
 @media(max-width:840px){
