@@ -2,6 +2,9 @@ body{
     background: rgb(4, 51, 80);
     height: 100%;
 }
+html {
+    height: 100%;
+}
 .games-wrapper{
     justify-content: center;
     margin-top: 30px;
@@ -41,22 +44,12 @@ body{
     justify-content: center;
     display: flex;
     background: rgb(4, 51, 80);
-<<<<<<< HEAD
     width: 100%;
     margin-bottom: 30px;
-=======
 }
-.nav2 ul li a{
-    color:#fff;
-    height: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1px 3px;
-}
-.nav2 ul li a:hover{
-    opacity: 0.8;
->>>>>>> 67c94a0c43442e1c1c91455050f361fa6bdcfc0a
+.footer-games {
+    position: absolute;
+    bottom: 0;
 }
 @media(max-width:840px){
 .column-wrapper{

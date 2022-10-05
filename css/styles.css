@@ -6,6 +6,7 @@ body{
     background: rgb(4, 51, 80);
     font-family: 'roboto';
     height: 100%;
+    margin-inline: auto;
 }
 header{
     width:100%;
@@ -108,15 +109,14 @@ img{
     background-color: rgb(255, 251, 0);
     border-radius: 10px;
 }
-.wrapper{
-    max-width: 2000px;
-    margin: auto;
-}
 .logo{
     display: flex;
     max-height: 90px;
     margin-left: 3rem;
     margin-right: 1.5rem;
+}
+.logo-div {
+    background-color: rgb(19, 18, 18);
 }
 .top-sellers-section{
     display: flex;
@@ -146,17 +146,17 @@ img{
 }
 .deals-h2{
     display: flex;
-    max-width: 84%;
+    width:50%;
     border-top: 2px solid silver;
     margin-inline: auto;
 }
 .deals-section{
     display: flex;
-    max-width: 100%;
     background-color:rgb(4, 51, 80);
     min-height: 280px;
-    max-width: 500px;
     margin: auto;
+    border-bottom: 2px solid rgb(161, 5, 5);
+    max-width: 100%;
 }
 .deals-container{
     max-width: 600px;
@@ -224,12 +224,6 @@ h2{
     margin-bottom: 10px;
     min-height: 220x;
 }
-.deals-cta-container{
-    display: flex;
-    justify-self: center;
-    align-self: center;
-    margin: auto;
-}
 .cta-deals, .sell-games-button{
     background-color: rgb(133, 9, 133);
     padding: 10px 20px;
@@ -242,14 +236,6 @@ h2{
     text-transform: uppercase;
     text-align: center;
     margin-inline: auto;
-}
-.deals-cta-container a{
-    text-decoration: none;
-    color: #fff;
-}
-.deals-cta-container{
-    display: flex;
-    justify-content: center;
 }
 .cta-deals:hover{
     cursor: pointer;
@@ -309,13 +295,15 @@ h2{
     justify-content: center;
     text-align: center;
     font-family: 'glue gun','roboto' , verdana, sans-serif;
+    min-width: 84%;
 }
 .pre-order-section1{
     display: flex;
-    background-color: rgb(4, 51, 80);
-    max-width: 1000px;
-    margin: auto;    
+    flex-direction: column;
+    background-color: rgb(4, 51, 80); 
     margin-top: 80px;
+    margin-inline: auto;
+    width: 100%;
 }
 .pre-order-section2{
     padding: 0;
@@ -330,9 +318,12 @@ h2{
     font-size: 20px;
     margin-top: -1px;
 }
-.pre-order-paragraph1{
+.pre-order-h2{
+    width:50%;
     border-top: 2px solid silver;
-    padding-top: 30px;
+    margin-top: 50px;
+    padding-top: 50px;
+    margin-inline: auto;
 }
 .pre-order-container{
     display: flex;
@@ -557,13 +548,8 @@ h2{
 }
 .nav2 ul li a{
     text-decoration: none;
-<<<<<<< HEAD
     color: #fff;
     }
-=======
-    color: #000;
-}
->>>>>>> 67c94a0c43442e1c1c91455050f361fa6bdcfc0a
 .nav2 ul{
     list-style-type: none;
     line-height: 2;
@@ -990,7 +976,10 @@ footer{
 #index-footer{
     position: absolute;
     bottom:0;
-    margin-top: auto;
+    left: 0;
+    top: 120%;
+    height: 100px;
+
 }
 @media (max-width:745px){
 .navbar{
@@ -1112,9 +1101,9 @@ footer{
 .deals-section{
     max-width: 300px;
 }
-.deals-cta-container{
-    margin-top: -10px;
-    align-content: center;
+.cta-deals > a {
+    color: #fff;
+    text-decoration: none;
 }
 .deals-container-2 p{
     display: flex;
